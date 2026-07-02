@@ -1,0 +1,220 @@
+PODS:
+  - appmetrica_plugin (4.0.0):
+    - AppMetricaAdSupport (~> 6.1)
+    - AppMetricaCore (~> 6.1)
+    - AppMetricaCoreExtension (~> 6.1)
+    - AppMetricaCrashes (~> 6.1)
+    - AppMetricaIDSync (~> 6.1)
+    - AppMetricaLibraryAdapter (~> 6.1)
+    - AppMetricaScreenshot (~> 6.1)
+    - AppMetricaWebKit (~> 6.1)
+    - Flutter
+  - AppMetricaAdSupport (6.4.0):
+    - AppMetricaCore (= 6.4.0)
+    - AppMetricaCoreExtension (= 6.4.0)
+  - AppMetricaCore (6.4.0):
+    - AppMetricaCoreUtils (= 6.4.0)
+    - AppMetricaEncodingUtils (= 6.4.0)
+    - AppMetricaFMDB (= 6.4.0)
+    - AppMetricaHostState (= 6.4.0)
+    - AppMetricaIdentifiers (= 6.4.0)
+    - AppMetricaKeychain (= 6.4.0)
+    - AppMetricaLog (= 6.4.0)
+    - AppMetricaNetwork (= 6.4.0)
+    - AppMetricaPlatform (= 6.4.0)
+    - AppMetricaProtobuf (= 6.4.0)
+    - AppMetricaProtobufUtils (= 6.4.0)
+    - AppMetricaStorageUtils (= 6.4.0)
+  - AppMetricaCoreExtension (6.4.0):
+    - AppMetricaCore (= 6.4.0)
+    - AppMetricaStorageUtils (= 6.4.0)
+  - AppMetricaCoreUtils (6.4.0):
+    - AppMetricaLog (= 6.4.0)
+  - AppMetricaCrashes (6.4.0):
+    - AppMetricaCore (= 6.4.0)
+    - AppMetricaCoreExtension (= 6.4.0)
+    - AppMetricaCoreUtils (= 6.4.0)
+    - AppMetricaEncodingUtils (= 6.4.0)
+    - AppMetricaHostState (= 6.4.0)
+    - AppMetricaLog (= 6.4.0)
+    - AppMetricaPlatform (= 6.4.0)
+    - AppMetricaProtobufUtils (= 6.4.0)
+    - AppMetricaStorageUtils (= 6.4.0)
+    - KSCrash/Recording (< 2.6.0, >= 2.5.1)
+  - AppMetricaEncodingUtils (6.4.0):
+    - AppMetricaCoreUtils (= 6.4.0)
+    - AppMetricaLog (= 6.4.0)
+    - AppMetricaPlatform (= 6.4.0)
+  - AppMetricaFMDB (6.4.0)
+  - AppMetricaHostState (6.4.0):
+    - AppMetricaCoreUtils (= 6.4.0)
+    - AppMetricaLog (= 6.4.0)
+  - AppMetricaIdentifiers (6.4.0):
+    - AppMetricaKeychain (= 6.4.0)
+    - AppMetricaLogSwift (= 6.4.0)
+    - AppMetricaPlatform (= 6.4.0)
+    - AppMetricaStorageUtils (= 6.4.0)
+    - AppMetricaSynchronization (= 6.4.0)
+  - AppMetricaIDSync (6.4.0):
+    - AppMetricaCore (= 6.4.0)
+    - AppMetricaCoreExtension (= 6.4.0)
+    - AppMetricaCoreUtils (= 6.4.0)
+    - AppMetricaLog (= 6.4.0)
+    - AppMetricaNetwork (= 6.4.0)
+    - AppMetricaPlatform (= 6.4.0)
+    - AppMetricaStorageUtils (= 6.4.0)
+  - AppMetricaKeychain (6.4.0):
+    - AppMetricaCoreUtils (= 6.4.0)
+    - AppMetricaLog (= 6.4.0)
+    - AppMetricaStorageUtils (= 6.4.0)
+  - AppMetricaLibraryAdapter (6.4.0):
+    - AppMetricaCore (= 6.4.0)
+    - AppMetricaCoreExtension (= 6.4.0)
+  - AppMetricaLog (6.4.0)
+  - AppMetricaLogSwift (6.4.0):
+    - AppMetricaLog (= 6.4.0)
+  - AppMetricaNetwork (6.4.0):
+    - AppMetricaCoreUtils (= 6.4.0)
+    - AppMetricaLog (= 6.4.0)
+    - AppMetricaPlatform (= 6.4.0)
+  - AppMetricaPlatform (6.4.0):
+    - AppMetricaCoreUtils (= 6.4.0)
+    - AppMetricaLog (= 6.4.0)
+  - AppMetricaProtobuf (6.4.0)
+  - AppMetricaProtobufUtils (6.4.0):
+    - AppMetricaProtobuf (= 6.4.0)
+  - AppMetricaScreenshot (6.4.0):
+    - AppMetricaCore (= 6.4.0)
+    - AppMetricaCoreExtension (= 6.4.0)
+    - AppMetricaStorageUtils (= 6.4.0)
+  - AppMetricaStorageUtils (6.4.0):
+    - AppMetricaCoreUtils (= 6.4.0)
+    - AppMetricaLog (= 6.4.0)
+  - AppMetricaSynchronization (6.4.0):
+    - AppMetricaLogSwift (= 6.4.0)
+  - AppMetricaWebKit (6.4.0):
+    - AppMetricaCore (= 6.4.0)
+    - AppMetricaCoreUtils (= 6.4.0)
+    - AppMetricaLog (= 6.4.0)
+  - audioplayers_darwin (0.0.1):
+    - Flutter
+    - FlutterMacOS
+  - device_info_plus (0.0.1):
+    - Flutter
+  - Flutter (1.0.0)
+  - in_app_purchase_storekit (0.0.1):
+    - Flutter
+    - FlutterMacOS
+  - KSCrash/Core (2.5.1)
+  - KSCrash/Recording (2.5.1):
+    - KSCrash/RecordingCore
+  - KSCrash/RecordingCore (2.5.1):
+    - KSCrash/Core
+  - shared_preferences_foundation (0.0.1):
+    - Flutter
+    - FlutterMacOS
+  - startapp_sdk (1.0.1):
+    - Flutter
+    - StartAppSDK (~> 4.10)
+  - StartAppSDK (4.13.1)
+  - url_launcher_ios (0.0.1):
+    - Flutter
+  - vibration (3.0.0):
+    - Flutter
+
+DEPENDENCIES:
+  - appmetrica_plugin (from `.symlinks/plugins/appmetrica_plugin/ios`)
+  - audioplayers_darwin (from `.symlinks/plugins/audioplayers_darwin/darwin`)
+  - device_info_plus (from `.symlinks/plugins/device_info_plus/ios`)
+  - Flutter (from `Flutter`)
+  - in_app_purchase_storekit (from `.symlinks/plugins/in_app_purchase_storekit/darwin`)
+  - shared_preferences_foundation (from `.symlinks/plugins/shared_preferences_foundation/darwin`)
+  - startapp_sdk (from `.symlinks/plugins/startapp_sdk/ios`)
+  - url_launcher_ios (from `.symlinks/plugins/url_launcher_ios/ios`)
+  - vibration (from `.symlinks/plugins/vibration/ios`)
+
+SPEC REPOS:
+  trunk:
+    - AppMetricaAdSupport
+    - AppMetricaCore
+    - AppMetricaCoreExtension
+    - AppMetricaCoreUtils
+    - AppMetricaCrashes
+    - AppMetricaEncodingUtils
+    - AppMetricaFMDB
+    - AppMetricaHostState
+    - AppMetricaIdentifiers
+    - AppMetricaIDSync
+    - AppMetricaKeychain
+    - AppMetricaLibraryAdapter
+    - AppMetricaLog
+    - AppMetricaLogSwift
+    - AppMetricaNetwork
+    - AppMetricaPlatform
+    - AppMetricaProtobuf
+    - AppMetricaProtobufUtils
+    - AppMetricaScreenshot
+    - AppMetricaStorageUtils
+    - AppMetricaSynchronization
+    - AppMetricaWebKit
+    - KSCrash
+    - StartAppSDK
+
+EXTERNAL SOURCES:
+  appmetrica_plugin:
+    :path: ".symlinks/plugins/appmetrica_plugin/ios"
+  audioplayers_darwin:
+    :path: ".symlinks/plugins/audioplayers_darwin/darwin"
+  device_info_plus:
+    :path: ".symlinks/plugins/device_info_plus/ios"
+  Flutter:
+    :path: Flutter
+  in_app_purchase_storekit:
+    :path: ".symlinks/plugins/in_app_purchase_storekit/darwin"
+  shared_preferences_foundation:
+    :path: ".symlinks/plugins/shared_preferences_foundation/darwin"
+  startapp_sdk:
+    :path: ".symlinks/plugins/startapp_sdk/ios"
+  url_launcher_ios:
+    :path: ".symlinks/plugins/url_launcher_ios/ios"
+  vibration:
+    :path: ".symlinks/plugins/vibration/ios"
+
+SPEC CHECKSUMS:
+  appmetrica_plugin: 303b3199b6802051e39665997b95c63518780b41
+  AppMetricaAdSupport: 7917152aa0ef411c1d97eb3f0cae6ea5b641f120
+  AppMetricaCore: 194940c8078265e41ea7643cb2887a4b971874f3
+  AppMetricaCoreExtension: 1e1f8199e22f302964658a7ae53858868dfdc521
+  AppMetricaCoreUtils: 4e18c085a9c43891b345ad5278e294f4ce3fbfec
+  AppMetricaCrashes: 6ab70d458b26ad0f556f070556554664e53640b8
+  AppMetricaEncodingUtils: 913510c09ced5992f277350041987446398ee974
+  AppMetricaFMDB: f28efa06b9876c3d23d27bd7d915ac8d9f8fa444
+  AppMetricaHostState: 8e1edbf11e269025eab7a53e35cf0e8fe78be3eb
+  AppMetricaIdentifiers: fdc9306ca1eb3ece02158619a78fa37311539ad9
+  AppMetricaIDSync: 15d21d8020fcb042f54d5758b740d3a34963f684
+  AppMetricaKeychain: 8ccb82b9df733efb30a1ac844d098e9698d35dde
+  AppMetricaLibraryAdapter: bae24fcd55e368c632658027db1d9f93231d24d3
+  AppMetricaLog: 3483b3ebd50841d9e283362cb41a374d7847435a
+  AppMetricaLogSwift: 03be2923286b4402a373e99f85358b28b76a1c81
+  AppMetricaNetwork: 33b53be2ce79d29a35b3f00e25a6cdab1d8b51c2
+  AppMetricaPlatform: 2db6e165cf3064d1193891f990ac67c81fd37055
+  AppMetricaProtobuf: f3ff5f3fa7e49a17a5f1b85b4431758b0fe78f6c
+  AppMetricaProtobufUtils: 13a21fd0b223e9e053301d74cccc1b15ba5bbb60
+  AppMetricaScreenshot: f76fd6948fc75a95114046472c7d564384e3c00d
+  AppMetricaStorageUtils: 6cbac75be2197ead29086172832c7cab77fccbe4
+  AppMetricaSynchronization: c92558b76b513a8903167b9e93b71b6d97c9cd02
+  AppMetricaWebKit: 32e90aef329a48fa37d631f3be102be2d325f3c0
+  audioplayers_darwin: f15e209a3e856d1a7edcf98dc029f484fead2242
+  device_info_plus: bf2e3232933866d73fe290f2942f2156cdd10342
+  Flutter: cabc95a1d2626b1b06e7179b784ebcf0c0cde467
+  in_app_purchase_storekit: 2342c0a5da86593124d08dd13d920f39a52b273a
+  KSCrash: 8c4464fd5da7de520f2ce4a00fdf63f169a80f18
+  shared_preferences_foundation: 5086985c1d43c5ba4d5e69a4e8083a389e2909e6
+  startapp_sdk: ee9c3da2fbba8e659392ac1f2c156ac25711744f
+  StartAppSDK: 03e509880837ea1d795091ff4a59542a04b4af79
+  url_launcher_ios: bb13df5870e8c4234ca12609d04010a21be43dfa
+  vibration: 8e4d81c3e73ab229a9fb5ab2692f789c4a46d74d
+
+PODFILE CHECKSUM: 55d67065f9f417a3b4c6dacd2ac3e662d09c397b
+
+COCOAPODS: 1.16.2

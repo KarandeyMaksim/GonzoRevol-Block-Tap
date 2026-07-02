@@ -1,0 +1,59 @@
+# GitLab CI — release APK/AAB per "Инструкция для разработчиков-2.md"
+# Required CI/CD variables (Settings → CI/CD → Variables):
+#   KEYSTORE_BASE64  — base64 of android/com.gonzorevol.blocktap.jks
+#   KEYSTORE_PASSWORD — GonzoRevol2026! (or your store password)
+#   KEY_PASSWORD      — same as key password
+#   KEY_ALIAS         — gonzorevol
+
+stages:
+  - build
+
+variables:
+  FLUTTER_VERSION: "stable"
+
+build_android_release:
+  stage: build
+  image: ghcr.io/cirruslabs/flutter:stable
+  before_script:
+    - flutter --version
+    - flutter pub get
+    - echo "$KEYSTORE_BASE64" | base64 -d > android/com.gonzorevol.blocktap.jks
+    - |
+      cat > android/key.properties <<EOF
+      storePassword=${KEYSTORE_PASSWORD}
+      keyPassword=${KEY_PASSWORD}
+      keyAlias=${KEY_ALIAS}
+      storeFile=../com.gonzorevol.blocktap.jks
+      EOF
+  script:
+    - flutter build appbundle --release
+    - flutter build apk --release
+    - mkdir -p release
+    - cp build/app/outputs/flutter-apk/app-release.apk release/com.gonzorevol.blocktap.apk
+    - cp build/app/outputs/bundle/release/app-release.aab release/com.gonzorevol.blocktap.aab
+    - cp android/com.gonzorevol.blocktap.jks release/com.gonzorevol.blocktap.jks
+    - |
+      TMP="$(mktemp -d)"
+      rsync -a \
+        --exclude build \
+        --exclude .dart_tool \
+        --exclude .git \
+        --exclude release \
+        --exclude ios/Pods \
+        --exclude ios/.symlinks \
+        --exclude .idea \
+        ./ "$TMP/com.gonzorevol.blocktap/"
+      (cd "$TMP" && zip -rq "$CI_PROJECT_DIR/release/com.gonzorevol.blocktap.zip" com.gonzorevol.blocktap)
+      rm -rf "$TMP"
+  artifacts:
+    name: "com.gonzorevol.blocktap-v${CI_COMMIT_TAG:-$CI_COMMIT_SHORT_SHA}"
+    paths:
+      - release/com.gonzorevol.blocktap.apk
+      - release/com.gonzorevol.blocktap.aab
+      - release/com.gonzorevol.blocktap.jks
+      - release/com.gonzorevol.blocktap.zip
+    expire_in: 30 days
+  rules:
+    - if: $CI_COMMIT_TAG
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+    - when: manual
